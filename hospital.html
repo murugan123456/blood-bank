@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Blood Bank</title>
+    <link rel="website Icon" href="images/">
+    <link rel="stylesheet" href="css/hospital.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="form">
+                <h2>HOSPITAL REGISTRATION</h2>
+                <form action="php/hospital.php">
+                    <div class="hospital-name">
+                        <input type="text" placeholder="Hospital Name" required name="Hname">
+                        <label for="" class="fa fa-hotel"></label>
+                    </div>
+                    <div class="registered-number">
+                        <input type="text" placeholder="Registration Number" required name="RegNumber">
+                        <label for="" class="fa fa-edit"></label>
+                    </div>
+                    <div class="address">
+                        <input type="text" placeholder="Hospital Address" required name="address">
+                        <label for="" class="fa fa-home"></label>
+                    </div>
+                    <div class="doctor-name">
+                        <input type="text" placeholder="Doctor Name" required name="DoctorName">
+                        <label for="" class="fa fa-user"></label>
+                    </div>
+                    <div class="Email">
+                        <input type="email" id="email" placeholder="Email address" required name="email">
+                        <label for=" " class="fa fa-envelope"></label>
+                    </div>
+                    <div class="phone">
+                        <input type="number"  id="number" placeholder="Contact Number" required minlength="10" maxlength="10" name="contact">
+                        <label for=" " class="fa fa-phone"></label>
+                    </div>
+                    <div class="username">
+                        <input type="text" name="username" id="user-name" placeholder="User Name" >
+                        <label for="" class="fa fa-user-secret"></label>
+                    </div>
+                    <div class="password">
+                        <input type="password" required id="pwd" name="Upassword" placeholder="Password" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <input type="checkbox" name="show" id="show" onchange="password()">
+                        <label for="show" class="fa fa-eye-slash" id="picon"></label>
+                    </div>
+                    <div class="cpassword">
+                        <input type="password" required id="pwd1" placeholder="Confirm Password" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <input type="checkbox" name="icon" id="icon" onchange="confirmpassword()">
+                        <label for="icon" class="fa fa-eye-slash" id="cpicon"></label>
+                    </div>
+                    <div class="buttons">
+                            <button type="reset">RESET</button>
+                            <button type="submit">SUBMIT</button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/hospital.js"></script>
+</body>
+</html>

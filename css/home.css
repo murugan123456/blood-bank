@@ -1,0 +1,104 @@
+body{
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    margin: 2px;
+    box-sizing: border-box;
+    background-attachment: fixed;
+    background-size: cover;  
+}
+.text-success{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: large;
+   color: red;
+   text-align: center;
+}
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    height: fit-content;
+    width: fit-content;
+}
+.all{
+    width: 100%;
+    height: 70vh;
+   display: grid;
+   place-items: center;
+}
+.btns{
+    width: 100vw;
+    display: flex;
+    justify-content:space-evenly;
+}
+.btn1,.btn2,.btn3{
+    text-align: center;
+    margin: 0px 80px;
+    height:42px;
+    width:260px;
+    outline: none;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    color: rgb(43, 149, 153);
+    border-radius: 2px;
+    position: relative;
+    transition: all 0.4s linear;
+}
+button{
+    padding: 10px;
+    white-space:nowrap;
+    border-radius: 5px;
+    z-index: 10;
+    background-color: none;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 500;
+    background-color: whitesmoke;
+    transition: all 1s linear;
+    border: 1px solid rgb(4, 252, 210);
+
+}
+.spn1,.spn2,.spn3{
+    z-index: -3;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(17, 217, 243);
+    left: 0;
+    top: 0;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+.btn1:hover .spn1,.btn2:hover .spn2, .btn3:hover .spn3{
+    width:100%;
+}
+button:hover {
+    transition: all 0.4s linear;
+    color: rgb(10, 126, 204);
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+@media (max-width:1230px) {
+    .btns{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content:space-between;
+        }
+    .btn1,.btm2,.btn3 {
+        margin: 30px 0px;
+    }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donor Details</title>
+    <link rel="stylesheet" href="css/getblood.css">
+    <link rel="website Icon" href="images/find-icon.jfif">
+</head>
+<body style="background-image: url(images/get.jpg);">
+    <div class="main">
+        <form action="php/get.php" method="post">
+            <h1>FIND BLOOD DONOR</h1>
+            <input type="text" placeholder="UserName" required name="username">
+            <input type="password" name="pwd" id="password" placeholder="Password" required>
+            <input type="text" name="bloodname" required placeholder="Blood Group"> 
+            <input type="text" name="city" required placeholder="City"> 
+            <button type="submit">Find</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="css/doner.css">
+    <link rel="website Icon" href="images/icon.jfif">
+    <script src="js/doner.js"></script>
+</head>
+<body style="background-image: url(images/register.jpg);">
+    <h1></h1>
+    <div class="main">
+        <form action="/php/donor.php" id="form" method="post">
+            <h2>REGISTER FOR BLOOD DONOR</h2>
+            <div>
+            <input type="text" placeholder="Enter Your Name" required name="name"> 
+            </div>
+            <div>
+            <input type="text" placeholder="Enter Your DISTRICT" required name="city"> 
+            </div> <div>
+            <input type="number" placeholder="Enter Your Contact Number" required name="number"> 
+            </div> <div>
+            <input type="text" placeholder="Blood Group Like....A+,A-" name="blood" required>
+            </div>
+            <div class="date"><label for="date">Date of Birth</label> <br>
+            <input type="date" name="date" id="date" class="date" required>
+            </div>
+            <div id="last-date">
+            </div>
+            <div class="yesno">
+                <label for="yes-no">Already Blood Donated : </label>
+                <input type="radio" name="yesno" id="yes" value="yes" required > <i>YES</i>
+                <input type="radio" name="yesno" id="no" value="no" required> <i>NO</i>
+            </div>
+            <div class="date"><label for="date">Last Date of Blood Donation</label> <br>
+                <input type="date" name="Ldate" id="lastdate" class="date" readonly>
+            </div>
+            <div class="btn">
+                <button type="submit" name="submit" onclick="validate()">Register</button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="/js/doner.js"></script>
+</html>

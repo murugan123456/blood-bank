@@ -1,0 +1,110 @@
+body{
+    background-image: url(/images/register.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    margin-top: 80px;
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    height: max-content;
+    padding: 20px;    
+    color: rgb(19, 139, 133); 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: -5px 5px 8px rgb(241, 177, 228);
+}
+input[type=text],input[type=number],input[type=date]{
+    outline: none;
+    width: 300px;
+    height: 25px;
+    font-size: 1.1em;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(37, 95, 170);  
+    background-color: transparent;
+    border: 1px solid rgb(8, 156, 156);
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin: 5px 0px ;
+}
+.date{
+    color: rgb(37, 95, 170); 
+}
+.yesno{
+    margin: 10px;
+    font-size: 18px;
+    color: crimson;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+button{
+    margin: 10px 35px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid rgb(240, 8, 55);
+    border-radius: 5px;
+    background-color: aqua;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.3s linear;
+    text-transform: uppercase;  
+    scale: 0.8; 
+}
+button:hover{
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px 0px crimson,
+    0px 0px 20px 0px crimson;
+    color: crimson;
+    scale: 1;
+    border: none;
+}
+input::placeholder{
+    color: rgb(37, 95, 170);
+    text-transform: capitalize;
+}
+input[type=text]:is(:hover,:focus),input[type=number]:is(:hover,:focus), input[type=date]:is(:hover,:focus) {
+ box-shadow: 0px 0px 10px 0px rgba(37, 95, 170,0.7);
+}
+/*.load{
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: darkslateblue;
+}
+.loading{
+    width: 100px ;
+    height: 100px ;
+    background-color: transparent;
+    border: 3px solid grey;
+    border-top-color:cyan;
+    border-bottom-color:rgb(4, 90, 161);
+    animation: loading 2s linear infinite;
+    border-radius: 50%;
+}
+@keyframes loading {
+   from{
+    transform: rotate(0deg);
+   }
+   to{
+    transform: rotate(360deg);
+   }
+}*/
